@@ -1,5 +1,5 @@
 # Web Programming Laboratory Work (3 semester)
-
+### [Deploy Link](https://shavuhas.github.io/web-3-semester)
 ## Plan:
 - [x] Lab #1
 - [ ] Lab #2  
