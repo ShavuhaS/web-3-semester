@@ -69,6 +69,14 @@ main > div {
     border-style: solid;
 }
 
+.header-slogan {
+    max-width: 50%;
+}
+
+.block-1 {
+    max-width: 40%;
+}
+
 .block-2, .block-4 {
     background-color: var(--color-2-4);
 }
@@ -100,6 +108,10 @@ main > div {
     border-top: 1px solid black;
     grid-area: 2 / 1 / span 1 / span 2;
     justify-content: flex-start;
+}
+
+nav {
+    max-width: 50%;
 }
 
 .menu-list {
