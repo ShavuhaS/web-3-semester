@@ -39,10 +39,15 @@ header, footer {
     min-height: 15vh;
     width: 100%;
     padding: 1%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    column-gap: 10%;
     background-color: var(--color-h-f);
+}
+
+.header-slogan, .block-7 {
+    justify-self: flex-end;
 }
 
 main {
@@ -51,7 +56,7 @@ main {
     border-width: 1px 0;
     border-style: solid;
     display: grid;
-    grid-template: 4fr auto / repeat(4, 1fr);
+    grid-template: 1fr auto / repeat(4, 1fr);
     column-gap: 5%;
 }
 
@@ -61,20 +66,18 @@ footer {
 
 main > div {
     height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     padding: 3% 5%;
     border-width: 0 1px;
     border-style: solid;
+    display: grid;
+    align-content: center;
+    justify-items: flex-end;
 }
 
-.header-slogan {
-    max-width: 50%;
-}
-
-.block-1 {
-    max-width: 40%;
+.block-2 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .block-2, .block-4 {
@@ -82,10 +85,7 @@ main > div {
 }
 
 .block-3, .block-4, .block-5 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 20px;
+    row-gap: 20px;
 }
 
 .block-4 * {
@@ -112,11 +112,7 @@ main > div {
     min-height: 10vh;
     border-top: 1px solid black;
     grid-area: 2 / 1 / span 1 / span 2;
-    justify-content: flex-start;
-}
-
-.block-7 {
-    max-width: 40%;
+    justify-items: flex-start;
 }
 
 nav {
@@ -129,10 +125,6 @@ nav {
 
 .menu-title {
     color: var(--color-menu-title);
-}
-
-.footer-slogan-block {
-    max-width: 50%;
 }
 
 .footer-link {
