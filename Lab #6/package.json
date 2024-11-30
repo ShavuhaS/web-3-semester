@@ -1,0 +1,25 @@
+{
+  "name": "lab-6",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:dev": "npm run webpack:dev && dotenv -e .env.development -- nodemon ./server/src/app.js",
+    "start": "npm run webpack && dotenv -e .env.production -- node ./server/src/app.js",
+    "webpack:dev": "dotenv -e .env.development -- webpack -c webpack.config.js",
+    "webpack": "dotenv -e .env.production -- webpack -c webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv-webpack": "^8.1.0",
+    "nodemon": "^3.1.7",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.8",
+    "dotenv-cli": "^7.4.4",
+    "express": "^4.21.1"
+  }
+}
